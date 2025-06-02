@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+  <ImageView
+      android:id="@+id/centerImageView"
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      android:src="@drawable/hatch"
+      android:layout_centerInParent="true"
+      android:visibility="gone"/>
+
+  <ImageView
+      android:id="@+id/GameName"
+      android:layout_width="wrap_content"
+      android:layout_height="200dp"
+      android:src="@drawable/gamename"
+      android:layout_centerHorizontal="true"
+      android:layout_centerVertical="true"
+      android:visibility="visible" /> <!-- 가시성을 명확하게 설정 -->
+
+  <ImageView
+      android:id="@+id/MovingDino"
+      android:layout_width="300dp"
+      android:layout_height="130dp"
+      android:src="@drawable/move"
+      android:layout_centerHorizontal="true"
+      android:layout_centerVertical="true"
+      android:layout_below="@+id/GameName"
+      android:visibility="visible" />
+
+  <com.facebook.login.widget.LoginButton
+      android:id="@+id/login_button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:layout_below="@+id/MovingDino"
+      android:minHeight="48dp"
+      android:minWidth="48dp"
+      android:visibility="visible"/> <!-- 가시성을 명확하게 설정 -->
+
+</RelativeLayout>

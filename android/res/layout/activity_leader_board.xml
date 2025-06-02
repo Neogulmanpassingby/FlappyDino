@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2">
+
+  <TextView
+      android:id="@+id/leaderboardTitle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="20dp"
+      android:text="LeaderBoard"
+      android:textSize="24sp"
+      android:textColor="@android:color/white"
+      android:fontFamily="sans-serif-medium"/>
+
+  <ListView
+      android:id="@+id/leaderboardListView"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/leaderboardTitle"
+      android:layout_marginTop="20dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginEnd="16dp"
+      android:layout_centerInParent="true"
+      android:padding="16dp"/>
+</RelativeLayout>
